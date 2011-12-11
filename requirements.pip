@@ -1,0 +1,55 @@
+#-r libs.txt
+app/mediathread/requirements/src/Django-1.2.5.tar.gz
+app/mediathread/requirements/src/resolver-0.2.1.tar.gz
+app/mediathread/requirements/src/selector-0.8.11.tar.gz
+app/mediathread/requirements/src/Paste-1.7.2.tar.gz
+app/mediathread/requirements/src/PasteDeploy-1.3.3.tar.gz
+app/mediathread/requirements/src/PasteScript-1.7.3.tar.gz
+app/mediathread/requirements/src/cdap-1.0.tar.gz
+app/mediathread/requirements/src/httplib2-0.6.0.tar.gz
+app/mediathread/requirements/src/restclient-0.9.9.tar.gz
+app/mediathread/requirements/src/feedparser-4.1.tar.gz
+#app/mediathread/requirements/src/imageuploader-0.1.tar.gz
+app/mediathread/requirements/src/Markdown-2.0.tar.gz
+# anders modified this to remove the stupid ez_setup requirement from setup.py
+app/mediathread/requirements/src/pyenchant-1.5.1.tar.gz 
+app/mediathread/requirements/src/simplejson-2.0.9.tar.gz
+app/mediathread/requirements/src/smartypants-1.6.0.2.tar.gz
+app/mediathread/requirements/src/uuid-1.30.tar.gz
+
+# these will probably be installed globally, but i'll list them anyway for completeness
+# ..actually it's because i'm using py2.6 on ubuntu 9.04, where virtualenv's use of site
+# packages is kind of broken since lib/python/site-packages has apparently been renamed
+# to dist-packages. so on my system i'm actually downloading and installing them locally
+# during bootstrap
+app/mediathread/requirements/src/psycopg2-2.4-no-mx.tar.gz
+#psycopg2
+
+# ===============================
+# STACKATO
+# ===============================
+MySQL-python
+django-stackato
+
+#for djangosherd xmeml final cut pro support
+app/mediathread/requirements/src/xmeml-0.9.tar.gz
+
+# for functional testing
+#app/mediathread/requirements/src/flunc-0.6-dev.tar.gz
+
+# apps.txt
+app/mediathread/requirements/src/django-smartif-0.1.tar.gz
+app/mediathread/requirements/src/djangowind-0.9.8.tar.gz
+app/mediathread/requirements/src/sorl-3.1.tar.gz
+#app/mediathread/requirements/src/django-survey-0.0.2.tar.gz
+app/mediathread/requirements/src/django-tagging-0.3.1.tar.gz
+app/mediathread/requirements/src/template_utils-0.4p2.tar.gz
+app/mediathread/requirements/src/typogrify-1.0.tar.gz
+#app/mediathread/requirements/src/django-tinymce-1.5.tar.gz
+#app/mediathread/requirements/src/djangohelpers-0.1.tar.gz
+#app/mediathread/requirements/src/django_courseaffils-0.2.tar.gz
+app/mediathread/requirements/src/djangohelpers-0.3dev.tar.gz
+app/mediathread/requirements/src/django-indexer-0.2.1.tar.gz
+app/mediathread/requirements/src/django-templatetag-sugar-0.1.tar.gz
+app/mediathread/requirements/src/django-paging-0.2.2.tar.gz
+app/mediathread/requirements/src/django-sentry-1.5.4.tar.gz
