@@ -32,7 +32,8 @@ urlpatterns = patterns('',
                        logout_page,
                        auth_urls,#see above
 
-                
+                       (r'^media/(?P<path>.*)$', 'django.views.static.serve',
+                                                  {'document_root': os.path.abspath(os.path.join(os.path.dirname(admin.__file__), 'media')), 'show_indexes': True}),
                        (r'^admin/', admin.site.urls),
                        (r'^jsi18n', 'django.views.i18n.javascript_catalog'),
                        (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': site_media_root}),
